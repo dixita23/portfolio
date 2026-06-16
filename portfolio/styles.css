@@ -130,7 +130,7 @@ a {
 }
 
 #main {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .section__inner {
@@ -787,6 +787,31 @@ a {
   transform-origin: 50% 0;
 }
 
+.section--process.is-intro-playing .process__card img {
+  animation: process-bell-swing 1.25s cubic-bezier(0.45, 0.05, 0.55, 0.95)
+    infinite;
+}
+
+.section--process.is-intro-playing .process__card--discover img {
+  animation-delay: 0s;
+}
+
+.section--process.is-intro-playing .process__card--define img {
+  animation-delay: 0.06s;
+}
+
+.section--process.is-intro-playing .process__card--ideate img {
+  animation-delay: 0.12s;
+}
+
+.section--process.is-intro-playing .process__card--design img {
+  animation-delay: 0.04s;
+}
+
+.section--process.is-intro-playing .process__card--test img {
+  animation-delay: 0.1s;
+}
+
 .process__card:hover img {
   animation: process-bell-swing 1.25s cubic-bezier(0.45, 0.05, 0.55, 0.95)
     infinite;
@@ -841,6 +866,7 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .section--process.is-intro-playing .process__card img,
   .process__card:hover img {
     animation: none;
   }

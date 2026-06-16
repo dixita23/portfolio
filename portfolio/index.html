@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fm.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -37,8 +38,8 @@
           </label>
           <ul id="site-nav-menu" class="site-nav__list">
             <li><a href="#about">About</a></li>
-            <li><a href="#process">Process</a></li>
             <li><a href="#work">Work</a></li>
+            <li><a href="#process">Process</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -202,6 +203,52 @@
       </section>
 
       <section
+        id="work"
+        class="section section--work"
+        aria-labelledby="work-heading"
+      >
+        <div class="section__inner">
+          <h2 id="work-heading" class="work__title">My Recent Work</h2>
+          <div class="cards">
+            <article class="card card--stack-0">
+              <div class="card__media">
+                <img
+                  class="card__image"
+                  src="assets/rivanta 1.png"
+                  alt="Rivanta — From AI-powered automation to conversion-focused web experiences"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+            <article class="card card--stack-1">
+              <div class="card__media">
+                <img
+                  class="card__image"
+                  src="assets/beatstore 1.png"
+                  alt="BeatStore.in — India's dedicated beat marketplace for producers and artists"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+            <article class="card card--stack-2">
+              <div class="card__media">
+                <img
+                  class="card__image"
+                  src="assets/fm 1.png"
+                  alt="Feedlot Manager — Software that works as hard as you do"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+            <div class="cards__runway" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section
         id="process"
         class="section section--process"
         aria-labelledby="process-heading"
@@ -266,63 +313,6 @@
           </div>
         </div>
       </section>
-
-      <section id="work" class="section section--work" aria-labelledby="work-heading">
-        <div class="section__inner">
-          <h2 id="work-heading" class="section__title">My Recent Work</h2>
-          <div class="work-showcase">
-            <article class="work-card work-card--asset work-card--wide">
-              <img
-                src="assets/agon.png"
-                alt="AI Knowledge Platform — laptop mockup of the Imagon dashboard"
-                width="1200"
-                height="800"
-                loading="lazy"
-                decoding="async"
-                class="work-card__asset-img"
-              />
-            </article>
-
-            <div class="work-showcase__pair">
-              <article class="work-card work-card--asset">
-                <img
-                  src="assets/rivanta.png"
-                  alt="Rivanta — from AI-powered automation to conversion-focused web experiences"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                  decoding="async"
-                  class="work-card__asset-img"
-                />
-              </article>
-              <article class="work-card work-card--asset">
-                <img
-                  src="assets/beatstore.png"
-                  alt="BeatStore.in — beat marketplace for producers and artists"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                  decoding="async"
-                  class="work-card__asset-img"
-                />
-              </article>
-            </div>
-
-            <article class="work-card work-card--asset work-card--wide">
-              <img
-                src="assets/fm.png"
-                alt="Feedlot Manager — software for feedlot operations"
-                width="1400"
-                height="400"
-                loading="lazy"
-                decoding="async"
-                class="work-card__asset-img"
-              />
-            </article>
-          </div>
-        </div>
-      </section>
-      
 
       <section
         id="testimonials"
@@ -503,5 +493,6 @@
       </div>
     </footer>
     <script src="testimonials-carousel.js" defer></script>
+    <script src="process-section.js" defer></script>
   </body>
 </html>
