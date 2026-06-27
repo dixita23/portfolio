@@ -158,6 +158,8 @@ a {
 }
 
 /* Header */
+
+
 .site-header {
   position: sticky;
   top: 0;
@@ -168,16 +170,18 @@ a {
 }
 
 .site-header__inner {
+   
   max-width: var(--container-max);
   margin: 0 auto;
   padding: var(--space-2) var(--container-pad);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   min-height: var(--header-height);
 }
 
 .logo {
+  margin-right: auto;
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 700;
@@ -190,7 +194,8 @@ a {
 }
 
 .site-nav {
-  position: relative;
+  /* position: relative; */
+  margin-right: 1.5rem;
 }
 
 .site-nav__checkbox {
@@ -233,8 +238,9 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: var(--space-1);
+  gap: 2rem;
   position: absolute;
   right: 0;
   top: calc(100% + var(--space-3));
@@ -273,6 +279,7 @@ a {
 }
 
 @media (min-width: 48rem) {
+  
   .site-nav__toggle {
     display: none;
   }
@@ -1450,7 +1457,7 @@ a {
   min-height: clamp(14rem, 40vw, 24rem);
 }
 .card__image--basicwash {
-  transform: scale(1.15);
+  transform: scale(1.17);
 }
 
 .work-card__media img {
